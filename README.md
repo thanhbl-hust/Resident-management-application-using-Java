@@ -19,7 +19,7 @@ Subject: `Introduction to Software Engineering - HUST - 2022.1`
 
 We used 2 main languages:
 - `Java`: build applicaiton system.
-- `Java FX`: build application UI.
+- `Java FX`: build application UI (using Scene Builder).
 - `SQL`: Build database system for application.
 
 ## Result of project!
