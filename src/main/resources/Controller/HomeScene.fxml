@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomeController">
+   <center>
+      <VBox fx:id="vBox" alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="404.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="pane" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <VBox prefHeight="96.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane maxHeight="1.7976931348623157E308" prefHeight="50.0" prefWidth="1000.0" styleClass="header">
+               <children>
+                  <Label styleClass="title_header" text="QUẢN LÝ THÔNG TIN KHU DÂN CƯ " />
+                  <Button fx:id="logOut" alignment="CENTER" layoutX="885.0" layoutY="7.0" mnemonicParsing="false" onAction="#logOut" prefHeight="32.0" prefWidth="101.0" style="-fx-background-color: rgb(120, 122, 3); -fx-text-fill: white;" text="Log Out" textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Button>
+               </children>
+            </Pane>
+            <Pane prefHeight="45.0" prefWidth="1000.0" styleClass="header" VBox.vgrow="NEVER">
+               <children>
+                  <HBox layoutX="-1.0" layoutY="9.0" prefHeight="42.0" prefWidth="1000.0">
+                     <children>
+                        <Button fx:id="qLNhanKhauBtn" mnemonicParsing="false" onAction="#nhanKhauChangeScene" prefHeight="32.0" styleClass="nav_item" text="QUẢN LÝ THÔNG TIN NHÂN KHẨU" />
+                        <Button fx:id="qLHoKhauBtn" mnemonicParsing="false" onAction="#hoKhauChangeScene" prefHeight="30.0" styleClass="nav_item" text="QUẢN LÝ THÔNG TIN HỘ KHẨU" />
+                        <Button fx:id="qLTamTruBtn" mnemonicParsing="false" onAction="#tamTruChangeScene" prefHeight="30.0" styleClass="nav_item" text="QUẢN LÝ TẠM TRÚ" />
+                        <Button fx:id="qLTamVangBtn" mnemonicParsing="false" onAction="#tamVangChangeScene" prefHeight="30.0" styleClass="nav_item" text="QUẢN LÝ TẠM VẮNG" />
+                        <Button fx:id="qLPAKNBtn" mnemonicParsing="false" onAction="#phanAnhKienNghiChangeScene" prefHeight="32.0" styleClass="nav_item" text="QUẢN LÝ PHẢN ÁNH - KIẾN NGHỊ" />
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

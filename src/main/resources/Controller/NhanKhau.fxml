@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="borderPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.NhanKhauController">
+   <bottom>
+      <StackPane maxHeight="-Infinity" prefHeight="130.0" styleClass="footer" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="130.0">
+               <children>
+                  <Button fx:id="editButton" alignment="CENTER" mnemonicParsing="false" onAction="#editEvent" prefWidth="150.0" styleClass="btn2" text="Sửa" textFill="#454029" />
+                  <Button fx:id="delButton" alignment="CENTER" mnemonicParsing="false" onAction="#deleteEvent" prefHeight="43.0" prefWidth="150.0" styleClass="btn2" text="Xóa" />
+                  <Button fx:id="changeButton" alignment="CENTER" graphicTextGap="6.0" mnemonicParsing="false" onAction="#changeEvent" prefHeight="42.0" prefWidth="150.0" styleClass="btn2" text="Thay đổi" />
+                  <Button fx:id="addButton" alignment="CENTER" graphicTextGap="6.0" mnemonicParsing="false" onAction="#addEvent" prefHeight="42.0" prefWidth="150.0" styleClass="btn2" text="Thêm" />
+                  <Button fx:id="statisticalButton" alignment="CENTER" graphicTextGap="6.0" mnemonicParsing="false" onAction="#statisticalevent" prefHeight="42.0" prefWidth="150.0" styleClass="btn2" text="Thống kê" />
+               </children>
+            </HBox>
+         </children>
+      </StackPane>
+   </bottom>
+   <center>
+      <VBox style="-fx-background-color: blue;" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="table" maxHeight="1.7976931348623157E308" prefHeight="370.0" prefWidth="1066.0" VBox.vgrow="ALWAYS">
+              <columns>
+                <TableColumn fx:id="sTT" prefWidth="25.0" text="STT" />
+                  <TableColumn fx:id="maNhanKhau" prefWidth="90.0" text="Mã Nhân Khẩu" />
+                <TableColumn fx:id="hoten" prefWidth="140.0" text="Họ và tên" />
+                  <TableColumn fx:id="bidanh" prefWidth="120.0" text="Bí danh" />
+                  <TableColumn fx:id="cccd" prefWidth="100.0" text="Số CCCD" />
+                  <TableColumn fx:id="ngaysinh" prefWidth="90.0" text="Ngày sinh" />
+                  <TableColumn fx:id="gioitinh" prefWidth="60.0" text="Giới tính" />
+                  <TableColumn fx:id="quequan" prefWidth="130.0" text="Quê quán" />
+                  <TableColumn fx:id="thuongtru" maxWidth="1000.0" minWidth="0.0" prefWidth="130.0" text="Thường trú" />
+                  <TableColumn fx:id="dantoc" maxWidth="1000.0" minWidth="0.0" prefWidth="60.0" text="Dân tộc" />
+                  <TableColumn fx:id="nghenghiep" text="Nghề nghiệp" />
+                  <TableColumn fx:id="noilamviec" prefWidth="110.0" text="Nơi làm việc" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <HBox prefHeight="32.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="searchField" prefHeight="38.0" prefWidth="300.0" promptText="Nhập Họ tên, mã Nhân khẩu hoặc số CCCD" />
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

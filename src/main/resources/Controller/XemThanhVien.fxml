@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="1077.0" styleClass="subStage" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.XemThanhVienController">
+   <children>
+      <TableView fx:id="table" layoutY="113.0" prefHeight="460.0" prefWidth="1077.0">
+        <columns>
+          <TableColumn fx:id="sTT" prefWidth="44.0" text="STT" />
+            <TableColumn fx:id="maNhanKhau" prefWidth="90.0" text="Mã Nhân khẩu" />
+            <TableColumn fx:id="hoTen" prefWidth="145.0" text="Họ và tên" />
+            <TableColumn fx:id="cCCD" prefWidth="87.0" text="Số CCCD" />
+            <TableColumn fx:id="ngaySinh" text="Ngày sinh" />
+            <TableColumn fx:id="queQuan" prefWidth="138.0" text="Quê quán" />
+          <TableColumn fx:id="quanHeVoiCH" minWidth="0.0" prefWidth="118.0" text="Quan hệ với chủ hộ" />
+            <TableColumn fx:id="thuongTruTruoc" prefWidth="126.0" text="Nơi thường trú trước" />
+            <TableColumn fx:id="ngayChuyenDi" prefWidth="112.0" text="Ngày chuyển đi" />
+            <TableColumn fx:id="noiChuyenToi" prefWidth="116.0" text="Nơi chuyển tới" />
+            <TableColumn fx:id="ghiChu" prefWidth="102.0" text="Ghi chú" />
+        </columns>
+      </TableView>
+      <Label layoutX="38.0" layoutY="57.0" styleClass="title1" text="Hộ khẩu">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="45.0" prefWidth="1077.0" styleClass="header-subStage">
+         <children>
+            <Label styleClass="title_header" text="Thành Viên Hộ">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label fx:id="maHoKhauLabel" layoutX="171.0" layoutY="64.0" prefHeight="32.0" prefWidth="197.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="436.0" layoutY="57.0" styleClass="title1" text="Địa chỉ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="diaChiLabel" layoutX="558.0" layoutY="64.0" prefHeight="32.0" prefWidth="454.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

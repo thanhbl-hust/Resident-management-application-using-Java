@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="596.0" prefWidth="720.0" styleClass="subStage" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ThemHoKhauController">
+   <children>
+      <Button fx:id="saveButton" layoutX="393.0" layoutY="483.0" mnemonicParsing="false" onAction="#Submit" prefHeight="39.0" prefWidth="117.0" styleClass="btn3" text="Lưu" />
+      <VBox layoutX="167.0" layoutY="73.0" prefHeight="388.0" prefWidth="476.0">
+         <children>
+            <Pane prefHeight="128.0" prefWidth="476.0">
+               <children>
+                  <Label layoutX="95.0" layoutY="-15.0" prefHeight="59.0" prefWidth="189.0" text="Thông tin chủ hộ">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="150.0" text="Họ và tên chủ hộ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="hoTenField" prefHeight="31.0" prefWidth="200.0" promptText="Nguyễn Văn A" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="150.0" text="CCCD">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="cMNField" prefHeight="30.0" prefWidth="200.0" promptText="0123456789" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="150.0" text="Ngày sinh">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="ngaySinhDatePicker" prefHeight="25.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="150.0" text="Giới tính">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="gioiTinBox" prefWidth="100.0" value="Nam">
+                     <items>
+                            <FXCollections fx:factory="observableArrayList">
+                                <String fx:value="Nam" />
+                                <String fx:value="Nữ" />
+                                <String fx:value="Khác" />
+                            </FXCollections>
+                        </items>
+                  </ChoiceBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="150.0" text="Quê Quán">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="queQuanField" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="150.0" text="Thường Trú">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="thuongTruField" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="150.0" text="Dân tộc">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="danTocBox" prefHeight="26.0" prefWidth="100.0" value="Kinh">
+                        <items>
+                            <FXCollections fx:factory="observableArrayList">
+                                <String fx:value="Kinh" />
+                                <String fx:value="Tày" />
+                                <String fx:value="Thái" />
+                                <String fx:value="Hoa" />
+                                <String fx:value="Khơ-me" />
+                                <String fx:value="Mường" />
+                                <String fx:value="Nùng" />
+                                <String fx:value="HMông" />
+                                <String fx:value="Dao" />
+                                <String fx:value="Gia-rai" />
+                                <String fx:value="Ngái" />
+                                <String fx:value="Ê-đê" />
+                                <String fx:value="Ba na" />
+                                <String fx:value="Xơ-Đăng" />
+                                <String fx:value="Sán chay" />
+                                <String fx:value="Cơ-hơ" />
+                                <String fx:value="Chăm" />
+                                <String fx:value="Sán Dìu" />
+                                <String fx:value="Hrê" />
+                                <String fx:value="Mnông" />
+                                <String fx:value="Ra-Glai" />
+                                <String fx:value="Xtiêng" />
+                                <String fx:value="Bru-Vân-Kiều" />
+                                <String fx:value="Thổ" />
+                                <String fx:value="Giáy" />
+                                <String fx:value="Cơ-tu" />
+                                <String fx:value="Gié-riêng" />
+                                <String fx:value="Mạ" />
+                                <String fx:value="Khơ-mú" />
+                                <String fx:value="Co" />
+                                <String fx:value="Tà-ôi" />
+                                <String fx:value="Chơ-ro" />
+                                <String fx:value="Kháng" />
+                                <String fx:value="Xinh-mun" />
+                                <String fx:value="Hà Nhì" />
+                                <String fx:value="Chu ru" />
+                                <String fx:value="Lào" />
+                                <String fx:value="La Chí" />
+                                <String fx:value="La Ha" />
+                                <String fx:value="Phù Lá" />
+                                <String fx:value="La Hủ" />
+                                <String fx:value="Lự" />
+                                <String fx:value="Lô Lô" />
+                                <String fx:value="Chứt" />
+                                <String fx:value="Mảng" />
+                                <String fx:value="Pà Thẻn" />
+                                <String fx:value="Co Lao" />
+                                <String fx:value="Cống" />
+                                <String fx:value="Bổ Y" />
+                                <String fx:value="Si La" />
+                                <String fx:value="Pu Déo" />
+                                <String fx:value="Brâu" />
+                                <String fx:value="Ơ Đu" />
+                                <String fx:value="Rơ măm" />
+            
+                            </FXCollections>
+                        </items>
+                    </ChoiceBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="154.0" text="Địa chỉ hộ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="diaChiHoField" prefHeight="25.0" prefWidth="196.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label prefHeight="28.0" prefWidth="150.0" text="Nghề nghiệp">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ngheNghiepField" prefHeight="25.0" prefWidth="200.0" promptText="Công nhân" />
+         </children>
+      </HBox>
+      <HBox prefHeight="59.0" prefWidth="720.0" styleClass="header-subStage">
+         <children>
+            <Label styleClass="title_header" text="Thêm Hộ Khẩu">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

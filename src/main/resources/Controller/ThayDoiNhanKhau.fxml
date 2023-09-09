@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="1077.0" styleClass="subStage" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ThayDoiNhanKhauController">
+   <children>
+      <TableView fx:id="tableView" layoutX="47.0" layoutY="112.0" prefHeight="460.0" prefWidth="466.0">
+        <columns>
+          <TableColumn fx:id="hoTen" prefWidth="148.0" text="Họ và tên" />
+          <TableColumn fx:id="qHeChuHo" minWidth="0.0" prefWidth="161.0" text="Quan hệ với chủ hộ" />
+            <TableColumn fx:id="ghiChu" minWidth="0.0" prefWidth="164.0" text="Ghi chú" />
+        </columns>
+      </TableView>
+      <Label layoutX="58.0" layoutY="65.0" styleClass="title1" text="Hộ khẩu">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="alertLabel" layoutX="894.0" layoutY="71.0" prefHeight="17.0" prefWidth="171.0" />
+      <HBox prefHeight="45.0" prefWidth="1077.0" styleClass="header-subStage">
+         <children>
+            <Label styleClass="title_header" text="Thay đổi nhân khẩu">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <GridPane layoutX="555.0" layoutY="114.0" prefHeight="279.0" prefWidth="401.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Mã hộ khẩu">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label text="Họ và tên" GridPane.rowIndex="1">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label text="Ngày chuyển đi" GridPane.rowIndex="4">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="ngayChuyenDiPicker" prefHeight="25.0" prefWidth="242.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="Ghi chú" GridPane.rowIndex="6">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="noiChuyenDenField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="ghiChuField" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      
+            <Label text="Quan hệ với chủ hộ" GridPane.rowIndex="2">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label text="Nơi chuyển đến" GridPane.rowIndex="5">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="maHoKhauLabel" prefHeight="24.0" prefWidth="184.0" GridPane.columnIndex="1" />
+            <Label fx:id="hoTenLabel" prefHeight="24.0" prefWidth="184.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="qHVoiChuHoLabel" prefHeight="24.0" prefWidth="184.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Button fx:id="saveButton" layoutX="812.0" layoutY="435.0" mnemonicParsing="false" onAction="#Submit" prefHeight="39.0" prefWidth="119.0" styleClass="btn3" text="Lưu" />
+   </children>
+</AnchorPane>
